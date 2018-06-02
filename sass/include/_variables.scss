@@ -1,0 +1,22 @@
+//  name   : _variables.scss
+//  writer : DaichiSeki
+//  date   : 2017/03/01〜
+//  各種変数はここへ
+@charset "UTF-8";
+
+//  ブレイクポイント
+// min-width
+$breakpoint-up: (
+  'sm': 'screen and (min-width: 480px)',
+  'md': 'screen and (min-width: 768px)',
+  'lg': 'screen and (min-width: 1000px)',
+  'xl': 'screen and (min-width: 1200px)',
+) !default;
+
+// max-width
+$breakpoint-down: (
+  'sm': 'screen and (max-width: 479px)',
+  'md': 'screen and (max-width: 767px)',
+  'lg': 'screen and (max-width: 999px)',
+  'xl': 'screen and (max-width: 1199px)',
+) !default;

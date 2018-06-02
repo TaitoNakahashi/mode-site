@@ -1,0 +1,131 @@
+@charset "UTF-8";
+
+@import "include/variables";
+@import "include/mixin";
+
+
+/* ContentsArea
+-------------------------- */
+.container {
+	position: relative;
+	height: 100%;
+	text-align: center;
+	box-sizing: border-box;
+	font-family: "Times New Roman", "游明朝", YuMincho, "Hiragino Mincho ProN", Meiryo, serif;
+	color: #fff;
+
+	.container_in {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		margin: auto;
+		padding: 2em 6em;
+
+		@include mq-down(lg) {
+			padding: 2em 4em;
+		}
+
+		@include mq-down(md) {
+			padding: 2em 2em;
+		}
+
+		@include mq-down(sm) {
+			padding: 2em 2em;
+		}
+	}
+
+    .container__heading {
+        padding: 1em 0 1.3em;
+        text-align: center;
+        font-family: "Times New Roman", "游明朝", YuMincho, "Hiragino Mincho ProN", Meiryo, serif;
+        @include font-size(65);
+		font-weight: lighter;
+        color: #FFF;
+
+		@include mq-down(lg) {
+			padding: 1em 0 2em;
+			@include font-size(62);
+		}
+
+		@include mq-down(md) {
+			padding: 1em 0 2em;
+			@include font-size(45);
+		}
+
+		@include mq-down(sm) {
+			padding: 1em 0 1.5em;
+			@include font-size(42);
+		}
+    }
+
+    .container__wrapp {
+        overflow-y: scroll;
+		height: 50%;
+		margin: 0 auto;
+        box-sizing: border-box;
+
+		@include mq-down(lg) {
+			height: 50%;
+			width: 100%;
+		}
+
+		@include mq-down(md) {
+			height: 50%;
+			width: 60%;
+		}
+
+		@include mq-down(sm) {
+			height: 60%;
+			width: 50%;
+		}
+
+        .gallery {
+            max-width: 1400px;
+            width: auto;
+            //background-color: #fff;
+
+			@include mq-down(lg) {
+
+			}
+
+			@include mq-down(md) {
+
+			}
+
+			@include mq-down(sm) {
+
+			}
+
+            &__link {
+
+                &--image {
+                    width: 100%;
+                    padding: 2%;
+                    //max-width: 500px;
+                }
+
+            }
+        }
+    }
+}
+
+/*----------------------  button  ------------------------*/
+.button {
+	text-decoration: none;
+	margin-right: 15%;
+	padding: 2% 3%;
+	font-size: 0.9em;
+	font-family: Arial;
+	border: 2px solid #fff;
+	background: rgba(255, 255, 255, 0);
+	color: #fff;
+	position: absolute;
+	left: 5%;
+	transition: opacity 250ms ease;
+
+	&:hover {
+		opacity: 0.8;
+	}
+}

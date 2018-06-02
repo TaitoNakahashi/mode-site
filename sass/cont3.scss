@@ -1,0 +1,226 @@
+//  name   : cont3.scss
+//  writer : TaitoNakahashi
+//  date   : 2017/03/01〜
+@charset "UTF-8";
+
+@import "include/variables";
+@import "include/mixin";
+
+// content3の共通css
+#content3 {
+	position: relative;
+	height: 100%;
+	font-family: "Times New Roman", "游明朝", YuMincho, "Hiragino Mincho ProN", Meiryo, serif;
+	text-align: center;
+	color: #fff;
+
+	.swiper-container {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		margin: auto;
+		padding: 2em 0;
+
+		.swiper-pagination-bullets {
+			display: none;
+		}
+
+		.swiper-slide {
+			padding: 0 5em;
+
+			@include mq-down(lg) {
+
+			}
+
+			@include mq-down(md) {
+				padding: 0 3em;
+			}
+
+			@include mq-down(sm) {
+				padding: 0 2em;
+			}
+		}
+	}
+
+	.cont3-title {
+		text-align: center;
+
+		h2 {
+			padding: 1em 0;
+			@include font-size(65);
+			font-weight: lighter;
+
+			@include mq-down(lg) {
+				padding: 1em 0 2em;
+				@include font-size(62);
+			}
+
+			@include mq-down(md) {
+				@include font-size(45);
+			}
+
+			@include mq-down(sm) {
+				padding: 1em 0;
+				@include font-size(42);
+			}
+		}
+	}
+
+	.cont3-body {
+		position: relative;
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+}
+
+
+.title-text {
+	@include font-size(40);
+	font-weight: lighter;
+	text-shadow: 5px 5px 10px rgba(200,200,200,0.5);
+
+	@include mq-down(lg) {
+		@include font-size(36);
+	}
+
+	@include mq-down(md) {
+		@include font-size(28);
+	}
+
+	@include mq-down(sm) {
+		@include font-size(18);
+	}
+}
+
+
+/*--------------------------------------------------------
+	「motif-1」の部分
+---------------------------------------------------------*/
+
+.cont3-text {
+	@include font-size(16);
+	font-weight: 100;
+	line-height: 1.5em;
+	letter-spacing: 0.8pt;
+	/*text-shadow: 5px 5px 10px rgba(200,200,200,0.5);*/
+
+	@include mq-down(lg) {
+		@include font-size(16);
+	}
+
+	@include mq-down(md) {
+		@include font-size(13);
+	}
+
+	@include mq-down(sm) {
+		@include font-size(11);
+	}
+}
+
+.cont3-text-box1 {
+	text-align: left;
+
+	@include mq-down(lg) {
+		text-align: center;
+	}
+
+	@include mq-down(md) {
+
+	}
+
+	@include mq-down(sm) {
+
+	}
+}
+
+.cont3-text-box2 {
+	margin: 2em auto;
+
+	@include mq-down(lg) {
+		margin: 5em auto;
+	}
+
+	@include mq-down(md) {
+		margin: 2em auto;
+	}
+
+	@include mq-down(sm) {
+		margin: 1em auto;
+	}
+}
+
+.cont3-text-box3 {
+	text-align: right;
+
+	@include mq-down(lg) {
+		text-align: center;
+	}
+
+	@include mq-down(md) {
+
+	}
+
+	@include mq-down(sm) {
+
+	}
+}
+
+
+/*--------------------------------------------------------
+	「motif-2」の部分
+---------------------------------------------------------*/
+
+.cont3-text2 {
+	@include font-size(20);
+	font-weight: 100;
+	line-height: 1.5em;
+	letter-spacing: 0.8pt;
+
+	@include mq-down(lg) {
+		@include font-size(18);
+	}
+
+	@include mq-down(md) {
+		@include font-size(16);
+	}
+
+	@include mq-down(sm) {
+		@include font-size(11);
+	}
+}
+
+.cont3-text-box4 {
+	margin: 0 0 3em 0;
+
+	@include mq-down(lg) {
+	}
+
+	@include mq-down(md) {
+		margin: 2em 0 2em 0;
+	}
+
+	@include mq-down(sm) {
+
+	}
+}
+
+.cont3-text-box5 {
+
+	.margin {
+		margin: 3em 0 0 0;
+
+		@include mq-down(lg) {
+			margin: 2em 0 0 0;
+		}
+
+		@include mq-down(md) {
+
+		}
+
+		@include mq-down(sm) {
+
+		}
+	}
+}

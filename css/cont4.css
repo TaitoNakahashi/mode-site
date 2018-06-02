@@ -1,0 +1,192 @@
+@charset "UTF-8";
+#content4 {
+  position: relative;
+  height: 100%;
+  box-sizing: border-box;
+  font-family: "Times New Roman", "游明朝", YuMincho, "Hiragino Mincho ProN", Meiryo, serif;
+  text-align: center;
+  color: #fff;
+}
+#content4 .container-in {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  padding: 2em 6em;
+}
+@media screen and (max-width: 999px) {
+  #content4 .container-in {
+    padding: 2em 4em;
+  }
+}
+@media screen and (max-width: 767px) {
+  #content4 .container-in {
+    padding: 2em 2em;
+  }
+}
+@media screen and (max-width: 479px) {
+  #content4 .container-in {
+    padding: 2em 2em;
+  }
+}
+#content4 .cont_2__heading {
+  padding: 1em 0 1.3em;
+  text-align: center;
+  font-family: "Times New Roman", "游明朝", YuMincho, "Hiragino Mincho ProN", Meiryo, serif;
+  font-size: 65px;
+  font-size: 4.0625rem;
+  color: #FFF;
+}
+@media screen and (max-width: 999px) {
+  #content4 .cont_2__heading {
+    padding: 1em 0 2em;
+    font-size: 62px;
+    font-size: 3.875rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  #content4 .cont_2__heading {
+    padding: 1em 0 2em;
+    font-size: 45px;
+    font-size: 2.8125rem;
+  }
+}
+@media screen and (max-width: 479px) {
+  #content4 .cont_2__heading {
+    padding: 1em 0 1.5em;
+    font-size: 42px;
+    font-size: 2.625rem;
+  }
+}
+#content4 .cont_2__wrapp {
+  overflow-y: scroll;
+  height: 50%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+@media screen and (max-width: 999px) {
+  #content4 .cont_2__wrapp {
+    height: 50%;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 767px) {
+  #content4 .cont_2__wrapp {
+    height: 50%;
+    width: 60%;
+  }
+}
+@media screen and (max-width: 479px) {
+  #content4 .cont_2__wrapp {
+    height: 60%;
+    width: 50%;
+  }
+}
+#content4 .cont_2__wrapp .gallery {
+  max-width: 1400px;
+  width: auto;
+}
+#content4 .cont_2__wrapp .gallery__link--image {
+  width: 100%;
+  padding: 2%;
+}
+
+/*----------------------  new gallary  ------------------------*/
+.content-box {
+  margin-top: 2em;
+  letter-spacing: -0.5em;
+}
+@media screen and (max-width: 999px) {
+  .content-box {
+    margin-top: 0;
+  }
+}
+.content-box .link-button {
+  position: relative;
+  display: inline-block;
+  letter-spacing: normal;
+  transition: opacity 250ms ease;
+}
+.content-box .link-button:hover {
+  opacity: 0.8;
+}
+.content-box .link-button a {
+  font-size: 200%;
+  text-decoration: none;
+  color: #000;
+}
+.content-box .link-button a p {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+}
+
+img {
+  width: 80%;
+}
+img.clothes {
+  box-shadow: 0px 0px 6px 3px #eeeeee;
+  -moz-box-shadow: 0px 0px 6px 3px #eeeeee;
+  -webkit-box-shadow: 0px 0px 6px 3px #eeeeee;
+}
+img.photo {
+  box-shadow: 0px 0px 3px 3px #f8f8f8;
+  -moz-box-shadow: 0px 0px 3px 3px #f8f8f8;
+  -webkit-box-shadow: 0px 0px 3px 3px #f8f8f8;
+}
+
+@media screen and (max-width: 767px) {
+  .clothes {
+    width: 80%;
+    margin: 0 auto 5%;
+    position: relative;
+  }
+
+  .clothes a img {
+    max-width: 100%;
+    box-shadow: 0px 0px 6px 3px #eeeeee;
+    -moz-box-shadow: 0px 0px 6px 3px #eeeeee;
+    -webkit-box-shadow: 0px 0px 6px 3px #eeeeee;
+  }
+
+  .clothes a {
+    font-size: 200%;
+    text-decoration: none;
+    color: #000;
+  }
+
+  .clothes a p {
+    position: absolute;
+    top: 40%;
+    left: 30%;
+  }
+
+  .photo {
+    width: 80%;
+    margin: 0 auto 5%;
+    position: relative;
+  }
+
+  .photo a img {
+    max-width: 100%;
+    box-shadow: 0px 0px 3px 3px #f8f8f8;
+    -moz-box-shadow: 0px 0px 3px 3px #f8f8f8;
+    -webkit-box-shadow: 0px 0px 3px 3px #f8f8f8;
+  }
+
+  .photo a {
+    font-size: 200%;
+    text-decoration: none;
+    color: #000;
+  }
+
+  .photo a p {
+    position: absolute;
+    top: 40%;
+    left: 30%;
+  }
+}
+
+/*# sourceMappingURL=cont4.css.map */

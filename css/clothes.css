@@ -1,0 +1,506 @@
+@charset "UTF-8";
+.cfx:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+#contents {
+  font-family: "Times New Roman", "游明朝", YuMincho, "Hiragino Mincho ProN", Meiryo, serif;
+}
+
+#contents .heading_2 {
+  font-weight: lighter;
+}
+
+#contents .heading_3 {
+  font-weight: lighter;
+}
+
+@media screen and (min-width: 768px) {
+  /* ContentsArea
+  -------------------------- */
+  #contents {
+    margin: 0 auto;
+    padding: 10px 0 50px 0;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+  }
+
+  #contents .heading_2 {
+    padding: 1em 0 0.5em;
+    font-size: 2.8125rem;
+  }
+
+  #contents .heading_3 {
+    padding: 0.5em 0;
+    font-size: 1.8rem;
+  }
+
+  p {
+    padding: 10px 0;
+  }
+
+  .float-content {
+    overflow: hidden;
+  }
+
+  #contents span a img {
+    width: 25%;
+    margin: 3%;
+    border: 5px solid #fff;
+  }
+
+  #open01,
+  #open02,
+  #open03,
+  #open04,
+  #open05,
+  #open06,
+  #open07,
+  #open08,
+  #open09,
+  #open10,
+  #open11 {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: absolute;
+  }
+
+  .button {
+    text-decoration: none;
+    margin-right: 15%;
+    padding: 2% 3%;
+    font-size: 0.9em;
+    font-family: Arial;
+    border: 2px solid #fff;
+    background: rgba(255, 255, 255, 0);
+    color: #fff;
+    position: absolute;
+    left: 5%;
+    transition: opacity 250ms ease;
+  }
+  .button:hover {
+    opacity: 0.8;
+  }
+
+  .close {
+    position: absolute;
+    top: 1%;
+    right: 1%;
+    margin: 0;
+    width: 5%;
+    z-index: 999;
+    transition: opacity 250ms ease;
+  }
+
+  .close:hover {
+    opacity: 0.8;
+  }
+
+  .close_overlay {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    text-indent: -9999px;
+    position: absolute;
+    background: #000;
+    opacity: 0.5;
+    z-index: 5;
+  }
+
+  .modal_window {
+    top: 10%;
+    left: 5%;
+    padding: 5em 5em;
+    width: 90%;
+    text-align: center;
+    display: block;
+    background: #fff;
+    position: absolute;
+    z-index: 10;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .modal_window {
+    padding: 3em 3em;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .modal_window img {
+    max-width: 80%;
+  }
+
+  .info-image {
+    display: none !important;
+  }
+
+  .modal_windo h2 {
+    margin-bottom: 20px;
+    width: 400px;
+    height: 30px;
+    line-height: 30px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: left;
+    text-indent: 15px;
+    background: #000;
+  }
+
+  .modal_window p {
+    padding: 0 15px 15px 15px;
+    font-size: 12px;
+    line-height: 160%;
+    text-align: left;
+  }
+
+  .code-cloth-btn {
+    margin-top: 1em;
+    text-align: center;
+  }
+
+  .code-cloth-btn h4 {
+    font-size: 1em;
+    color: #000;
+  }
+
+  .code-cloth-btn a .code {
+    width: 10%;
+    margin-top: 2%;
+  }
+
+  /* CSS3 ModalWindow SET
+  -------------------------- */
+  @-webkit-keyframes modalFadeIn {
+    0% {
+      opacity: 0;
+      display: block;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  div#modal div:target {
+    -webkit-animation-name: modalFadeIn;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-iteration-count: 1;
+    opacity: 1;
+    display: block;
+  }
+
+  /*----------------- slideshow ------------------*/
+  #slideshow {
+    width: 50%;
+    margin: auto;
+    float: left;
+  }
+
+  #slideshow div {
+    width: 100%;
+    height: 380px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  #slideshow div div {
+    top: 0;
+    left: 0;
+    position: absolute;
+  }
+
+  #slideshow ul li {
+    float: left;
+    display: inline;
+  }
+
+  #slideshow .active {
+    filter: alpha(opacity=100) !important;
+    -moz-opacity: 1 !important;
+    opacity: 1 !important;
+  }
+
+  /*----------------- product-info ------------------*/
+  /*  スマホサイトでは表示しない　PCサイズのみ表示  */
+  #product-info {
+    width: 50%;
+    float: right;
+  }
+
+  #product-info img {
+    max-width: 70%;
+  }
+
+  /* =======================================
+      ClearFixElements
+  ======================================= */
+  #slideshow ul:after {
+    content: ".";
+    height: 0;
+    clear: both;
+    display: block;
+    visibility: hidden;
+  }
+
+  #slideshow ul {
+    display: block;
+    overflow: hidden;
+    margin-top: 2em;
+  }
+}
+/*-----------------------------
+iphone6
+----------------------------- */
+@media screen and (max-width: 767px) {
+  .info-image {
+    display: block;
+  }
+
+  #product-info {
+    display: none;
+  }
+
+  /* ContentsArea
+  -------------------------- */
+  #contents {
+    margin: 0 auto;
+    padding: 10px 0 50px 0;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+  }
+
+  #contents .heading_2 {
+    padding: 1em 0 0.5em;
+    font-size: 2.8125rem;
+  }
+
+  #contents .heading_3 {
+    padding: 0.5em 0;
+    font-size: 1.8rem;
+  }
+
+  p {
+    padding: 10px 0;
+  }
+
+  #contents span a img {
+    width: 25%;
+    margin: 3%;
+    border: 5px solid #fff;
+  }
+
+  #open01,
+  #open02,
+  #open03,
+  #open04,
+  #open05,
+  #open06,
+  #open07,
+  #open08,
+  #open09,
+  #open10,
+  #open11 {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: absolute;
+  }
+
+  .button {
+    text-decoration: none;
+    margin-right: 15%;
+    padding: 2% 3%;
+    font-size: 0.9em;
+    font-family: Arial;
+    border: 2px solid #fff;
+    background: rgba(255, 255, 255, 0);
+    color: #fff;
+    position: absolute;
+    left: 5%;
+  }
+
+  .close {
+    position: absolute;
+    top: -0.6%;
+    right: -1%;
+    margin: 0;
+    max-width: 10%;
+    z-index: 999;
+  }
+
+  .close_overlay {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    text-indent: -9999px;
+    position: absolute;
+    background: #000;
+    opacity: 0.5;
+    z-index: 5;
+  }
+
+  .modal_window {
+    top: 50%;
+    left: 50%;
+    margin: -100% 0 0 -45%;
+    width: 90%;
+    height: 700px;
+    text-align: center;
+    display: block;
+    background: #fff;
+    position: absolute;
+    z-index: 10;
+  }
+
+  .modal_window img {
+    max-width: 90%;
+    margin-top: 5%;
+  }
+
+  .modal_window .code {
+    width: 20%;
+    margin-top: 2%;
+    margin-left: 4%;
+    float: left;
+  }
+
+  .modal_window h2 {
+    margin-bottom: 20px;
+    width: 400px;
+    height: 30px;
+    line-height: 30px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: left;
+    text-indent: 15px;
+    background: #000;
+  }
+
+  .modal_window h4 {
+    margin-left: 5%;
+    font-size: 1.2em;
+    text-align: left;
+    color: #000;
+  }
+
+  .modal_window p {
+    padding: 0 15px 15px 15px;
+    font-size: 12px;
+    line-height: 160%;
+    text-align: left;
+  }
+
+  /* CSS3 ModalWindow SET
+  -------------------------- */
+  @-webkit-keyframes modalFadeIn {
+    0% {
+      opacity: 0;
+      display: block;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  div#modal div:target {
+    -webkit-animation-name: modalFadeIn;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-iteration-count: 1;
+    opacity: 1;
+    display: block;
+  }
+
+  /*--------------------------*/
+  .slideshow {
+    margin: 0 auto;
+  }
+
+  .slideshow div {
+    height: 450px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .slideshow div div {
+    top: 0;
+    left: 0;
+    position: absolute;
+  }
+
+  .slideshow ul {
+    display: inline-block;
+    overflow: hidden;
+    padding: 0 0 0 3%;
+  }
+
+  .slideshow ul li {
+    float: left;
+    display: inline;
+  }
+
+  .slideshow .active {
+    filter: alpha(opacity=100) !important;
+    -moz-opacity: 1 !important;
+    opacity: 1 !important;
+  }
+
+  /* =======================================
+      ClearFixElements
+  ======================================= */
+  .slideshow ul:after {
+    content: ".";
+    height: 0;
+    clear: both;
+    display: block;
+    visibility: hidden;
+  }
+}
+/*--------------------------
+iphone5
+-------------------------- */
+@media screen and (max-width: 374px) {
+  .modal_window {
+    top: 50%;
+    left: 50%;
+    margin: -90% 0 0 -45%;
+    width: 90%;
+    height: 640px;
+    text-align: center;
+    display: block;
+    background: #fff;
+    position: absolute;
+    z-index: 10;
+  }
+
+  .slideshow div {
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .slideshow ul {
+    display: inline-block;
+    overflow: hidden;
+    padding: 0 0 0 5%;
+  }
+
+  .slideshow ul li {
+    width: 15%;
+    float: left;
+    display: inline;
+  }
+}
+
+/*# sourceMappingURL=clothes.css.map */
